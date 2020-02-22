@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.8.0 on win32)" generated="20200112 04:14:05.393" rpa="false">
+<suite id="s1" name="StockUnlimited RobotFramework" source="E:\KULIAH\SEMESTER 5\PPMPL\w11\working directory\StockUnlimited_RobotFramework">
+<suite id="s1-s1" name="StockUnlimitedTest" source="E:\KULIAH\SEMESTER 5\PPMPL\w11\working directory\StockUnlimited_RobotFramework\StockUnlimitedTest.robot">
+<test id="s1-s1-t1" name="ButtonOneStockUnlimited">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://www.stockunlimited.com/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200112 04:14:05.703" level="INFO">Opening browser 'chrome' to base url 'https://www.stockunlimited.com/'.</msg>
+<status status="PASS" starttime="20200112 04:14:05.703" endtime="20200112 04:14:15.166"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20200112 04:14:15.166" endtime="20200112 04:14:15.170"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200112 04:14:17.179" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200112 04:14:15.170" endtime="20200112 04:14:17.179"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="su-login"]/a</arg>
+</arguments>
+<msg timestamp="20200112 04:14:17.179" level="INFO">Clicking element 'xpath=//*[@id="su-login"]/a'.</msg>
+<status status="PASS" starttime="20200112 04:14:17.179" endtime="20200112 04:14:17.255"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200112 04:14:19.266" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200112 04:14:17.255" endtime="20200112 04:14:19.266"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=/html/body/div[2]/div[2]/form/span[2]/input</arg>
+<arg>trispangrib@gmail.com</arg>
+</arguments>
+<msg timestamp="20200112 04:14:19.266" level="INFO">Typing text 'trispangrib@gmail.com' into text field 'xpath=/html/body/div[2]/div[2]/form/span[2]/input'.</msg>
+<status status="PASS" starttime="20200112 04:14:19.266" endtime="20200112 04:14:19.406"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=/html/body/div[2]/div[2]/form/span[3]/input</arg>
+<arg>Triska4499</arg>
+</arguments>
+<msg timestamp="20200112 04:14:19.406" level="INFO">Typing password into text field 'xpath=/html/body/div[2]/div[2]/form/span[3]/input'.</msg>
+<status status="PASS" starttime="20200112 04:14:19.406" endtime="20200112 04:14:19.510"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=/html/body/div[2]/div[2]/form/input[4]</arg>
+</arguments>
+<msg timestamp="20200112 04:14:19.510" level="INFO">Clicking element 'xpath=/html/body/div[2]/div[2]/form/input[4]'.</msg>
+<status status="PASS" starttime="20200112 04:14:19.510" endtime="20200112 04:14:24.180"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200112 04:14:26.187" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200112 04:14:24.184" endtime="20200112 04:14:26.187"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="sueditor-more"]</arg>
+</arguments>
+<msg timestamp="20200112 04:14:26.187" level="INFO">Clicking element 'xpath=//*[@id="sueditor-more"]'.</msg>
+<status status="PASS" starttime="20200112 04:14:26.187" endtime="20200112 04:14:28.040"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4</arg>
+</arguments>
+<msg timestamp="20200112 04:14:32.048" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20200112 04:14:28.040" endtime="20200112 04:14:32.048"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200112 04:14:32.048" endtime="20200112 04:14:34.268"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Test Completed</arg>
+</arguments>
+<msg timestamp="20200112 04:14:34.268" level="INFO">Test Completed</msg>
+<status status="PASS" starttime="20200112 04:14:34.268" endtime="20200112 04:14:34.268"></status>
+</kw>
+<status status="PASS" starttime="20200112 04:14:05.693" endtime="20200112 04:14:34.268" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200112 04:14:05.453" endtime="20200112 04:14:34.277"></status>
+</suite>
+<status status="PASS" starttime="20200112 04:14:05.433" endtime="20200112 04:14:34.278"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="StockUnlimited RobotFramework">StockUnlimited RobotFramework</stat>
+<stat pass="1" fail="0" id="s1-s1" name="StockUnlimitedTest">StockUnlimited RobotFramework.StockUnlimitedTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
